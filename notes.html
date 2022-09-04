@@ -25,12 +25,13 @@
     text-align: center;
   }
  #btna{
-  height: 30px;
+  height: 35px;
     width:150px;
     border: none;
     text-align: center;
     cursor: pointer;
    outline:none;
+   background:#0000ff;
  }
  #btngr{
   height: 30px;
@@ -93,9 +94,7 @@
     outline:none;
     border-radius:10px;
   }
- .bt{
-  border: 1px solid black;
- }
+ 
  @media (max-width:768px) {
     #btn,#btngr{
       width: 200px;
@@ -119,7 +118,7 @@
     <input type="button" value="Light mode" id="btnlight" onclick="Btnlight()" style="display:none ;">
   </div>
   <p>
-  <input type="color" name="" id="color"> <br> <br>
+  <input type="color" name="" id="color"> <br> 
   <input type="button" value="Get color" id="btna" onclick="funcbtn()"> 
   </p>
   <p id="text">Color code </p> 
