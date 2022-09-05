@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    margin: 10px;
+  }
+    #color{
+    height: 40px;
+    width: 150px;
+    border:none;
+    text-align: center;
+    border:1px solid #0000ff;
+  }
+ #btna,#btncopy{
+  height: 30px;
+    width:150px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+   outline:none;
+   background:#0000ff;
+   color:#ffffff;
+   font-weight:bold;
+ }
+ p{
+    font-weight:bold;
+    color: #0000ff;
+  }
+  #text1{
+    width: 300px;
+   height: 30px;
+   text-align: center;
+   font-size: 16px;
+   outline: 0;
+   letter-spacing:2px;
+   font-weight: bold;
+   border: 1px solid blueviolet;
+  }
+  #btncopy{
+  height: 35px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <br><br><br><br><br><br>
+  <hr>
+    <input type="color" name="" id="color"> <br> 
+    <input type="button" value="Get color" id="btna" onclick="funcbtn()"> 
+    <p id="text">Color code </p>
+    <input type="text" name="" placeholder="Type here given code"  id="text1">
+    <button id="btncopy">Copy Color Code</button>
+    <hr>
+    <button id="btna"><a style="text-decoration: none;color: white;" href="notes.html">EXIT</a></button>
+</body>
+<script>
+    function funcbtn(){
+  a=document.getElementById("color").value;
+  document.getElementById("text").innerText=a
+
+}
+const text1=document.getElementById("text1");
+const btncopy=document.getElementById("btncopy");
+btncopy.onclick=function() {
+ text1.select();
+ document.execCommand("copy");
+}
+</script>
+</html>
+
